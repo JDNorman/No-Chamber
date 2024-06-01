@@ -42,7 +42,7 @@ i:active {
 
 .container {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
 
   background: url("./assets/home-background.png");
   background-position: center;
