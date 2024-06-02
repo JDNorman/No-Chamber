@@ -49,7 +49,7 @@ const UserCard = (profilepicurl, nickname, username, userjob) => {
                             height: "80px",
                             borderRadius: "50%",
                             boxShadow: "0 0 8px 0 #8a53b1"
-                        }}>
+                        }}></img>
                 </figure>
             </div>
             <div
