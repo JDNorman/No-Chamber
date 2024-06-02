@@ -1,4 +1,6 @@
+
 /* MAIN */
+
 
 * {
   font-family: Arial, sans-serif;
@@ -12,8 +14,7 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  container-type: inline-size;
   @font-face {
     font-family: "Made Tommy";
     src: url(style.css/MADE TOMMY ExtraBold Outline_PERSONAL USE.otf);
@@ -28,39 +29,13 @@ a {
   justify-content: center;
 }
 
+i {
+  transition: all 300ms ease;
+}
+
 i:hover {
   color: #f8cd0e;
-  transition: 0.25s ease-in-out;
-  background: #573a166d;
-}
-
-i:active {
-  color: #f8cd0e;
-  transition: 0.25s ease-in-out;
-  background: #573a166d;
-}
-
-.container {
-  height: 100vh;
-  width: 100vw;
-
-  background: url("./assets/home-background.png");
-  background-position: center;
-  background-size: cover;
-  
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #292421f7;
+  text-shadow: 0px 0px 12px rgba(108,46,29,0.64);
 }
 
 ul {
@@ -77,7 +52,21 @@ li a {
   border-radius: 0.5rem;
 }
 
+.spice-purple {
+  width: fit-content;
+  color: #e6930e;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.spice-purple:hover {
+  color: #8a53b1;
+  text-shadow: 0px 0px 12px rgba(108,46,29,0.64);
+}
+
+
 /* ANIMATIONS */
+
 
 .fade-up { 
   animation: fade-up 650ms 600ms backwards;
@@ -94,7 +83,33 @@ li a {
   }
 }
 
+
 /* HOME STYLING */
+
+
+.container {
+  height: 2236px;
+  width: 100cqw;
+
+  background: url("./assets/home-background.png");
+  background-position: top;
+  background-size: 350%;
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 2236px;
+  background-color: #403027ed;
+}
 
 .header {
   padding-bottom: 3rem;
@@ -130,6 +145,7 @@ li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
 
 #nav {
@@ -145,7 +161,7 @@ li a {
 
 .home__links {
   padding: 0 1rem;
-  background: rgba(121, 121, 131, 0.061);
+  background: rgba(136, 136, 147, 0.061);
   border-radius: 1rem;
   height: 4rem;
   display: flex;
@@ -155,7 +171,7 @@ li a {
 }
 
 .home__link {
-  font-size: 20px;
+  font-size: 40px;
   color: black;
   padding: 0 16px;
   max-width: 80px;
@@ -164,9 +180,72 @@ li a {
   height: 100%;
 }
 
+.notice {
+  max-width: 90vw;
+  width: 90%;
+  height: 50vh;
+  z-index: 5;
+  padding: 8px;
+
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  background-color: #5c4033;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+  margin-bottom: 135px;
+}
+
+.bugs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bugs__header {
+  padding: 16px 32px;
+  letter-spacing: 0.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #e6930e;
+  font-size: 3rem;
+}
+
+.bugs__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.discord-invite {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  display: block;
+}
+
+.bug__links {
+  width: 20%;
+  align-self: center;
+  padding: 16px 32px;
+  margin: 40px;
+}
+
+.credits {
+
+}
 
 
 /* MAP STYLING */
+
+
 
 
 
@@ -174,8 +253,55 @@ li a {
 
 
 
+
+
 /* DISCORD STYLING */
 
 
 
+
+
 /* PROFILE STYLING */
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+  background-color: #242424;
+}
+
+.footer__row {
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__logo--img {
+  align-self: center;
+  width: 70px;
+  height: 70px;
+  margin-top: 16px;
+}
+
+.footer__anchor {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer__copyright {
+  align-self: center;
+  text-align: center;
+  padding-bottom: 16px;
+
+  letter-spacing: 0.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #e6930e;
+  font-style: bold;
+}
