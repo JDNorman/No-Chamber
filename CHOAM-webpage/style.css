@@ -64,6 +64,24 @@ li a {
   text-shadow: 0px 0px 12px rgba(108,46,29,0.64);
 }
 
+.name__span {
+  font-size: x-large;
+  font-weight: bold;
+  color: #e6930e;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.nick__span {
+  font-size: smaller;
+  font-style: italic;
+  color:rgba(76, 76, 76, 0.735);
+}
+
+.white-text {
+  color: white;
+}
+
 
 /* ANIMATIONS */
 
@@ -188,8 +206,11 @@ li a {
   padding: 8px;
 
   position: relative;
-  display: flex;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   background-color: #5c4033;
   border-radius: 20px;
@@ -197,19 +218,90 @@ li a {
   margin-bottom: 135px;
 }
 
-.bugs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.bugs__header {
+.notice__header {
   padding: 16px 32px;
   letter-spacing: 0.1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #e6930e;
   font-size: 3rem;
+}
+
+.user {
+  transform-style: preserve-3d;
+}
+
+.credits__list {  
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.credit__mention {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  height: 35%;
+  background-color: #242424;
+  border-radius: 1rem;
+  margin: 16px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user__info--row {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__name--info {
+  margin: 0;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-bottom: 8px;
+  transform: translateZ(75px);
+}
+
+.user__job {
+  text-justify: center;
+  text-align: center;
+}
+
+.user__photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__nickname {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.user__photo--mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 0px #8a53b1;
 }
 
 .bugs__content {
@@ -231,15 +323,17 @@ li a {
   display: block;
 }
 
+.discord-invite__text, .github-invite__text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bug__links {
   width: 20%;
   align-self: center;
   padding: 16px 32px;
   margin: 40px;
-}
-
-.credits {
-
 }
 
 
